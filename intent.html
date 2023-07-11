@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gun Deaths in America (2006-2020)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: "orange";
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    .slide {
+      display: none;
+    }
+    .active-slide {
+      display: block;
+    }
+    .chart-container {
+      width: 4000px;
+      height: 1500px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      background-color: "orange"
+    }
+    .associated-chart-container {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .text-box {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .slide-button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    .play-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+
+      .arrow {
+  fill: none;
+  stroke: rgb(213, 17, 184);
+  stroke-width: 1px;
+}
+
+    .pause-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+  </style>
+</head>
+<body>
+  <h1 style="color:red">GUN DEATHS IN AMERICA (2006-2020) </h1>
+
+
+
+
+  <div class="button-container">
+
+    <button class="slide-button" style = "background-color: rgb(25, 213, 194);" onclick="window.location.href='index.html'">Overview</button>
+    <button class="slide-button" style = "background-color: rgb(186, 172, 21);"onclick="window.location.href='sex.html'">Sex</button>
+    <button class="slide-button" style = "background-color: rgb(62, 179, 19);"onclick="window.location.href='race.html'">Race</button>
+    <button class="slide-button" style = "background-color: rgb(13, 93, 68);"onclick="window.location.href='education.html'">Education</button>
+    <button class="slide-button" style = "background-color: rgb(88, 14, 105);"onclick="window.location.href='time.html'">Time</button>
+    <button class="slide-button" style = "background-color: rgb(203, 17, 141);" onclick="window.location.href='visualization.html'">Visualization</button>
+    
+  </div>
+
+  <h1 style="color:rgb(162, 40, 26)">Intent</h1>
+
+
+
+  <h2 style="color: green"><em>On the left side, we have a bar chart that displays the aggregate number of gun deaths for each cause of death. On the right side, we have a pie 
+    chart that displays the percentage of gun deaths by each cause. For the specific label, number, and percentage information, mouse over each chart data item for an annotation 
+  that provides this information. These charts are representing combined data from 2006 to 2020 </em></h2>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div id="cause-chart" style="display: inline; width: 2000px"></div>
+
+
+
+  <div id="pie-chart" style="display: inline; width: 2000px"></div>
+
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="index.js"></script>
+  <script src="cause.js"></script>
+  
+
+
+
+
+</body>
+</html>

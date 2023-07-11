@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gun Deaths in America (2006-2020)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: "orange"
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    .slide {
+      display: none;
+    }
+    .active-slide {
+      display: block;
+    }
+    .chart-container {
+      width: 3500px;
+      height: 1500px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      background-color: "orange"
+    }
+    .associated-chart-container {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .text-box {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .slide-button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .v-button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-family:'Courier New', Courier, monospace;
+      font-style: italic;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    .play-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+
+    .pause-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+  </style>
+</head>
+<body>
+  <h1 style="color:red">GUN DEATHS IN AMERICA (2006-2020) </h1>
+
+  <div class="button-container">
+
+    <button class="slide-button" style = "background-color: rgb(25, 213, 194);" onclick="window.location.href='index.html'">Overview</button>
+    <button class="slide-button" style = "background-color: rgb(162, 40, 26);" onclick="window.location.href='intent.html'">Intent</button>
+    <button class="slide-button" style = "background-color: rgb(62, 179, 19);"onclick="window.location.href='race.html'">Race</button>
+    <button class="slide-button" style = "background-color: rgb(13, 93, 68);"onclick="window.location.href='education.html'">Education</button>
+    <button class="slide-button" style = "background-color: rgb(88, 14, 105);"onclick="window.location.href='time.html'">Time</button>
+    <button class="slide-button" style = "background-color: rgb(203, 17, 141);" onclick="window.location.href='visualization.html'">Visualization</button>
+    
+  </div>
+
+
+
+  <h1 style="color:orange"><u>Visualization of American gun deaths over the years from 2006 to 2020 </u></h1>
+
+
+
+
+   <h2 style="color: green"><em>Now we've reached the free-form exploration section of the narrative. Click on one of the buttons to see a visualization of 
+    every American gun death from 2006 to 2020 as dots that appear as time passes. Based on which button you select, these dots will be colored differently to represent 
+    different sub-categories in the category you select. Enjoy exploring!  </em></h2>
+
+
+
+
+
+
+
+  <br>
+  <br>
+
+
+  <div class="button-container">
+
+    <button class="v-button" style = "background-color: rgb(196, 196, 196);" onclick="window.location.href='chartintent.html'">Visualize by Intent</button>
+    <button class="v-button" style = "background-color: rgb(196, 196, 196);"onclick="window.location.href='chartrace.html'">Visualize by Race</button>
+    <button class="v-button" style = "background-color: rgb(196, 196, 196);"onclick="window.location.href='charteducation.html'">Visualize by Education Level</button>
+    <button class="v-button" style = "background-color: rgb(196, 196, 196);"onclick="window.location.href='chartsex.html'">Visualize by Sex</button>
+    
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="index.js"></script>
+  <script src="year.js"></script>
+  <script src="cause.js"></script>
+  
+
+
+
+</body>
+</html>

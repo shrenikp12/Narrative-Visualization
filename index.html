@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gun Deaths in America (2006-2020)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: "orange";
+      background-image: url("gun.jpg");
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    .slide {
+      display: none;
+    }
+    .active-slide {
+      display: block;
+    }
+    .chart-container {
+      width: 3500px;
+      height: 1500px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      background-color: "orange"
+    }
+    .associated-chart-container {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .text-box {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .slide-button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    .play-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+
+    .pause-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+  </style>
+</head>
+<body>
+  <h1 style="color:red">GUN DEATHS IN AMERICA (2006-2020) </h1>
+
+  <h1 style="color:orange"><u>Welcome to my project on the gun deaths in the United States over the last 14 years </u></h1>
+
+  <h2 style="color: green"><em>This website follows the martini glass structure - where you as the reader can start by viewing different slides, each which will show you
+    a different chart breaking down American gun deaths into categories. It's recommended you go in order through the slides - because the last slide is an overall visualization of 
+every gun death that allows for free form exploration based on categories. Clicking on each button navigates you to a webpage containing that chart. Enjoy! </em></h2>
+
+<br>
+<br>
+<br>
+<br>
+
+  <div class="button-container">
+
+    <button class="slide-button" style = "background-color: rgb(162, 40, 26);" onclick="window.location.href='intent.html'">Intent</button>
+    <button class="slide-button" style = "background-color: rgb(186, 172, 21);"onclick="window.location.href='sex.html'">Sex</button>
+    <button class="slide-button" style = "background-color: rgb(62, 179, 19);"onclick="window.location.href='race.html'">Race</button>
+    <button class="slide-button" style = "background-color: rgb(13, 93, 68);"onclick="window.location.href='education.html'">Education</button>
+    <button class="slide-button" style = "background-color: rgb(88, 14, 105);"onclick="window.location.href='time.html'">Time</button>
+    <button class="slide-button" style = "background-color: rgb(203, 17, 141);" onclick="window.location.href='visualization.html'">Visualization</button>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="index.js"></script>
+  <script src="time.js"></script>
+  <script src="race.js"></script>
+  <script src="sex.js"></script>
+  <script src="education.js"></script>
+  <script src="year.js"></script>
+  <script src="cause.js"></script>
+  
+
+
+
+
+
+</body>
+</html>

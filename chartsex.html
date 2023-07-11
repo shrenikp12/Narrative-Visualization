@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gun Deaths in America (2006-2020)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: "orange"
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    .slide {
+      display: none;
+    }
+    .active-slide {
+      display: block;
+    }
+    .chart-container {
+      width: 3500px;
+      height: 1500px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      background-color: "orange"
+    }
+    .associated-chart-container {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .text-box {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .slide-button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .v-button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-family:'Courier New', Courier, monospace;
+      font-style: italic;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    .play-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+
+    .pause-button {padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 30px;
+      cursor: pointer;}
+  </style>
+</head>
+<body>
+  <h1 style="color:red">GUN DEATHS IN AMERICA (2006-2020) </h1>
+
+  <div class="button-container">
+
+    <button class="slide-button" style = "background-color: rgb(25, 213, 194);" onclick="window.location.href='index.html'">Overview</button>
+    <button class="slide-button" style = "background-color: rgb(162, 40, 26);" onclick="window.location.href='intent.html'">Intent</button>
+    <button class="slide-button" style = "background-color: rgb(62, 179, 19);"onclick="window.location.href='race.html'">Race</button>
+    <button class="slide-button" style = "background-color: rgb(13, 93, 68);"onclick="window.location.href='education.html'">Education</button>
+    <button class="slide-button" style = "background-color: rgb(88, 14, 105);"onclick="window.location.href='time.html'">Time</button>
+    <button class="slide-button" style = "background-color: rgb(203, 17, 141);" onclick="window.location.href='visualization.html'">Visualization</button>
+    
+  </div>
+
+  <div class="button-container">
+
+    <button class="v-button" style = "background-color: rgb(196, 196, 196);" onclick="window.location.href='chartintent.html'">Visualize by Intent</button>
+    <button class="v-button" style = "background-color: rgb(196, 196, 196);"onclick="window.location.href='chartrace.html'">Visualize by Race</button>
+    <button class="v-button" style = "background-color: rgb(196, 196, 196);"onclick="window.location.href='charteducation.html'">Visualize by Education Level</button>
+    
+  </div>
+
+  <h1 style="color:rgb(19, 191, 197)"><u>Visualization of American gun deaths over the years from 2006 to 2020 by sex </u></h1>
+
+
+  <h2 style="color: green"><em>This visualization shows the amount of American gun deaths over the years, by sex. Each death is represented by a small dot on the screen.
+    As the year updates, all the people who died from guns that year are added as new  dots to the screen. The current date is shown to display the gun deaths up to that point,
+    and the number of people who died in that year and the overall gun deaths since 2006 are also displayed. These dots are colored differently based on the sex of the victim, as shown
+    in the key below. The data covers the years 2006 through 2020. Press Play to start the visualization
+   and Pause to stop it at any time. Note that due to the massive amounts of data being displayed, the visualization may take a few minutes to complete. Once started, scroll down slightly to see the full box. </em></h2>
+
+
+    
+  <h2 style="color: #ff7f0e">Male: Orange </h2>
+  <h2 style="color: #1f77b4">Female: Blue </h2>
+
+
+  <br>
+  <br>
+  <br>
+
+
+  <h2 style="display: inline;"><em>Current date: </em></h2>
+  <h2 id ="demo" style="display: inline; color: green">Jan 1 2006</h2>
+
+
+
+
+
+  <br>
+  <br>
+
+  <h2 style="display: inline;"><em>Number of gun deaths in </em></h2>
+  <h2 id="demo3" style="display: inline; color: purple">: 0</h2>
+
+  <br>
+  <br>
+
+  <h2 style="display: inline;"><em>Total number of gun deaths from 2006 to </em></h2>
+  <h2 id="demo2" style="display: inline; color: blue"><em>2006</em>: 0</h2>
+
+  <br>
+  <br>
+
+
+
+  <br>
+  <br>
+
+
+  <button id="play-button" class="play-button">Play  </button>
+  <button id="pause-button" class="pause-button">Stop</button>
+
+
+  <div id="yearsex-chart"></div>
+
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="index.js"></script>
+  <script src="chartsex.js"></script>
+  
+
+
+
+
+</body>
+</html>
